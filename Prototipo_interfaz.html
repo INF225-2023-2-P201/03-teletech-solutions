@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interfaz de Red</title>
+    <style>
+        /* Estilos CSS para el diseño */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        #contenedor {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #configuracion {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        #salida {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #resultado {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interfaz de Red</h1>
+    <div id="contenedor">
+        <!-- Ventana de comandos y configuraciones a la izquierda -->
+        <div id="configuracion">
+            <h2>Comandos y Configuraciones</h2>
+            <textarea id="ventanaComandos" rows="10" cols="40"></textarea>
+            <button onclick="ejecutarComando()">Ejecutar</button>
+        </div>
+        
+        <!-- Área de salida a la derecha -->
+        <div id="salida">
+            <h2>Salida</h2>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script>
+        // Función para ejecutar un comando y mostrar el resultado en el área de salida
+        function ejecutarComando() {
+            var comando = document.getElementById("ventanaComandos").value;
+            // Aquí puedes realizar alguna lógica o procesamiento con el comando
+            // Por ejemplo, aquí simplemente mostramos el comando en el área de salida
+            document.getElementById("resultado").textContent = "Comando ejecutado: " + comando;
+        }
+    </script>
+</body>
+</html>
