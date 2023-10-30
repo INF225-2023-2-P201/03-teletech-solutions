@@ -1,0 +1,21 @@
+----------------Formato para correr el programa de interfaz de software y base de datos----------------
+1.Se debe instalar xampp Control Panel v3.3.0 esto se hara para tener el servidor de apache y MySQL para poder acceder a la base da datos
+y poder ver la página web.
+
+2. Una vez con xampp corriendo accedemos a "localhost/phpmyadmin/", esto es para acceder a la base de datos.
+
+3. se crea una base de datos con el nombre "Proyecto_ING_SW" para luego importar el archivo que se ecuentra en la wiki con el mismo nombre
+el cual contiene las tablas y datos para la funcionalidad del programa.
+
+4. se descarga de la wiki la carpeta "proyecto_ISW",la cual contiene el programa.
+
+5. Agregar carpeta del proyecto xampp -> htdocs. (esta carpeta se encuentra donde se instala xampp)
+
+6. Se accede al programa vía navegador poniendo lo siguiente: "localhost/proyecto_ISW" para acceder a la carpeta.
+
+7. Se selecciona y con esto lo enviará a la pagina de inicio y register
+
+8. Se puede iniciar sesión con uno de los usuarios que estan en la base de datos o se puede registrar uno nuevo.
+
+*Como extra se puede visualizar el código con un IDLE como visual studio code que fué el que utilizamos abriendo la carpeta y de esta manera se tendra
+acceso al código."
