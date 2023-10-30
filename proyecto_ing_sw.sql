@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-10-2023 a las 03:14:41
+-- Tiempo de generación: 30-10-2023 a las 03:24:48
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -54,22 +54,20 @@ CREATE TABLE `usuario` (
   `Id_usuario` int(11) NOT NULL,
   `Nombre` varchar(15) DEFAULT NULL,
   `Correo` varchar(25) DEFAULT NULL,
-  `Contraseña` varchar(25) DEFAULT NULL
+  `Contraseña` varchar(25) DEFAULT NULL,
+  `rol` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`Id_usuario`, `Nombre`, `Correo`, `Contraseña`) VALUES
-(12, 'sir_sergio', 'sergio@gmail.com', '123'),
-(14, 'ariel', 'ariel@gmail.com', '1234'),
-(16, 'isaias', 'isaias@gmail.com', '1234'),
-(17, 'ariel234', 'vf@gmail.com', '1234'),
-(18, 'ariel3', 'hola@hola.com', '12345'),
-(19, 'arielqqqq', 'holaqqq@hola.com', '1234'),
-(20, 'ariel3wwww', 'holawwwww@hola.com', '1234'),
-(21, 'ariel42222', 'hol2222a@hola.com', '1234');
+INSERT INTO `usuario` (`Id_usuario`, `Nombre`, `Correo`, `Contraseña`, `rol`) VALUES
+(1, 'admin', 'admin@admin.com', 'admin', 'admin'),
+(12, 'sir_sergio', 'sergio@gmail.com', '123', 'admin'),
+(14, 'ariel', 'ariel@gmail.com', '1234', 'admin'),
+(16, 'isaias', 'isaias@gmail.com', '1234', 'operador'),
+(17, 'ariel234', 'vf@gmail.com', '1234', 'operador');
 
 --
 -- Disparadores `usuario`
