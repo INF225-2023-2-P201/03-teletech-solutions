@@ -26,3 +26,4 @@ Desarrolladores:
 * [Sprint 2](https://github.com/INF225-2023-2-P201/03-teletech-solutions/wiki/Sprint-2)
 * [Sprint 3](https://github.com/INF225-2023-2-P201/03-teletech-solutions/wiki/Sprint-3)
 * [Sprint 4](https://github.com/INF225-2023-2-P201/03-teletech-solutions/wiki/Sprint-4)
+* [Sprint 5](https://github.com/INF225-2023-2-P201/03-teletech-solutions/wiki/Sprint-5)
